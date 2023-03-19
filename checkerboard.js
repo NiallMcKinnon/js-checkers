@@ -26,8 +26,10 @@ class Checkerboard {
         this.squareSize = squareSize;
         this.squares = [];
         this.container = document.getElementById("checkerboard-container");
+        this.container.style.width = `${this.cols * this.squareSize}px`;
+        this.container.style.height = `${this.rows * this.squareSize}px`;
         const colors = ["black", "white"];
-        
+
         for (let i = 0; i < this.rows; i++) {
             const newRow = [];
             for (let j = 0; j < this.cols; j++) {

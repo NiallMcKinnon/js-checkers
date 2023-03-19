@@ -11,8 +11,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 320px;
-    height: 320px;
     margin: 0 auto;
     border: 1px solid black;
 }
