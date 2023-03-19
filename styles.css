@@ -1,0 +1,25 @@
+#checkerboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+#checkerboard-container div {
+    box-sizing: border-box;
+    font-size: 0;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+#checkerboard-container .white {
+    background-color: white;
+}
+
+#checkerboard-container .black {
+    background-color: black;
+}
