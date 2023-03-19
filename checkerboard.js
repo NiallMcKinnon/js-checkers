@@ -29,7 +29,7 @@ class Checkerboard {
         this.container.style.width = `${this.cols * this.squareSize}px`;
         this.container.style.height = `${this.rows * this.squareSize}px`;
         // const colors = ["black", "white"];
-        const colors = ["#769656", "#eeeed2"];
+        const colors = ["#eeeed2", "#769656"];
 
         for (let i = 0; i < this.rows; i++) {
             const newRow = [];
