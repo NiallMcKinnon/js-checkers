@@ -15,6 +15,7 @@ class Square {
     handleClick() {
         this.color = (this.color == 'white') ? 'black' : 'white';
         this.element.style.backgroundColor = this.color;
+        console.log("You clicked at: " + this.row.toString() +  " " + this.col.toString());
     }
 }
 
@@ -25,11 +26,8 @@ class Checkerboard {
         this.squareSize = squareSize;
         this.squares = [];
         this.container = document.getElementById("checkerboard-container");
-        this.init();
-    }
-
-    init() {
         const colors = ["black", "white"];
+        
         for (let i = 0; i < this.rows; i++) {
             const newRow = [];
             for (let j = 0; j < this.cols; j++) {
