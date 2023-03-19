@@ -31,12 +31,14 @@ class Checkerboard {
     init() {
         const colors = ["black", "white"];
         for (let i = 0; i < this.rows; i++) {
+            const newRow = [];
             for (let j = 0; j < this.cols; j++) {
                 const color = colors[(i + j) % 2];
                 const square = new Square(i, j, this.squareSize, color);
-                this.squares.push(square);
+                newRow.push(square);
                 this.container.appendChild(square.element);
             }
+            this.squares.push(newRow);
         }
     }
 }
